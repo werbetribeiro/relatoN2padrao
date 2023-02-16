@@ -30,7 +30,7 @@ const maskA = IMask(nAtenDigitados, atendMask);
 
 const numberTel = document.getElementById('numTel');
 const numTelMask = {
-    mask: '{00} 00000-0000'
+    mask: '{00} 0000-0000'
 };
 const maskTel = IMask(numberTel, numTelMask);
 
