@@ -1,0 +1,186 @@
+:root {
+  --bg-color: #000;
+  --header-color: rgba(32, 32, 36, 0.5);
+  --text-color: #FFF;
+  --branco: #FFF;
+  --input-color: #202024;
+  --dtlh-color: #ED1C24;
+  --hover-dtlh: #fc2930;
+  --dev-color: #D0D0D0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Inter', sans-serif, 'Roboto Mono', monospace;
+}
+
+header {
+  background: var(--header-color);
+  width: 100%;
+  text-align: center;
+  padding: 23px 0px;
+  border-bottom: 2px solid var(--dtlh-color);
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+#formulario {
+  margin: 0  auto;
+  max-width: 550px;
+  padding: 0 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* FATOR R */
+
+.boxFR {
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.boxFR input {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  background: var(--input-color);
+  border: none;
+}
+
+.boxFR input:focus {
+  outline: 1px var(--dtlh-color) solid;
+}
+
+.calculadores input {
+  width: 120px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  height: 30px;
+  outline: none;
+  color: var(--branco);
+}
+
+.calculadores input::placeholder {
+  font-size: 11px;
+  text-transform: none;
+}
+
+.calculadores input::selection {
+  background: var(--dtlh-color);
+  color: var(--text-color);
+}
+
+.inFR input:nth-child(1) {
+  width: 100px;
+  background: var(--dtlh-color);
+  color: var(--text-color);
+  height: 35px;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.inFR input:nth-child(2) {
+  width: 100px;
+  height: 30px;
+  border-radius: 0px 0px 4px 4px;
+  font-weight: bold;
+}
+
+/* RELATOS */
+
+label {
+  display: block;
+  text-transform: uppercase;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  min-width: 352px;
+  background: var(--input-color);
+  color: var(--branco);
+  outline: none;
+  border: none;
+  margin-bottom: 10px;
+  padding: 7px 5px;
+  border-radius: 4px;
+  max-height: 15.625rem; /* 250px */
+}
+
+textarea:focus {
+  outline: 1px var(--dtlh-color) solid;
+}
+
+textarea::selection {
+  background: var(--dtlh-color);
+  color: var(--text-color);
+}
+
+textarea::-webkit-scrollbar {
+  width: 10px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: var(--dtlh-color);
+  border-radius: 4px;
+}
+
+/* BOTÃO */
+
+#btnCopiar {
+  background: var(--dtlh-color);
+  color: var(--text-color);
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s;  
+}
+
+#btnCopiar:hover {
+  background: var(--hover-dtlh);
+}
+
+/* RODAPÉ */
+
+footer  {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 10px;
+  width: 100%;
+  text-align: center;
+  padding: 23px 70px;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--branco);
+  transition: color 0.3s;  
+}
+
+footer a:hover {
+  color: var(--dev-color);
+}

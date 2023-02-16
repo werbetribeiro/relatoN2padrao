@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/noc-icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Relato Padrão N2</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="./assets/logo-voanet.svg" alt="logomarca da voanet">
+      </div>
+    </header>
+
+    <main>
+      <div id="formulario" name="formulario">
+        <div class="boxFR">
+          <div class="calculadores">
+            <input type="date" id="data_ini">
+            <input type="date" id="data_fim">
+          </div>
+          <div class="calculadores">
+            <input type="text" id="dias" placeholder="Dia(s)">
+            <input type="text" id="nAtend" placeholder="Quant. Atendimentos">
+          </div>
+          <div class="inFR">
+            <input type="text" disabled id="l-fator" value="FATOR R" name="fatorR">
+            <input type="text" disabled id="fatoR" name="fator">
+          </div>
+        </div>
+        
+        <div>
+          <label id="l-problem">Problema/ Motivo:</label>
+          <textarea rows="1" spellcheck="true" id="problem"></textarea>
+
+          <label id="l-negociations">Tratativas:</label>
+          <textarea rows="1" spellcheck="true" id="negociations"></textarea>
+
+          <label id="l-conclusion">Conclusão:</label>
+          <textarea rows="1" spellcheck="true" id="conclusion"></textarea>
+
+          <label id="l-dispon">Disponibilidade:</label>
+          <textarea rows="1" spellcheck="true" id="dispon"></textarea>
+
+          <label id="l-ref">Ponto de referência:</label>
+          <textarea rows="1" spellcheck="true" id="ref"></textarea>
+          
+          <label id="l-numb">Número do telefone:</label>
+          <textarea rows="1" spellcheck="true" id="numTel"></textarea>
+
+          <label id="l-infotec">Informações técnicas:</label>
+          <textarea rows="1" spellcheck="true" id="infotec"></textarea>
+        </div>
+        <div>
+          <button id="btnCopiar">Copiar relato</button>
+        </div>
+      </div>
+      
+    </main>
+
+    <footer>
+      <p><a href="https://github.com/werbetribeiro" target="_blank">Werbet Ribeiro</a> &copy; <span id="ano"></span> - Todos os direitos reservados.</p>
+    </footer>
+  
+    
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
