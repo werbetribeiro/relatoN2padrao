@@ -58,7 +58,7 @@ main {
 }
 
 .boxFR input {
-  display: block;
+  display: inline-block;
   text-align: center;
   text-transform: uppercase;
   background: var(--input-color);
@@ -71,6 +71,7 @@ main {
 
 .calculadores input {
   width: 120px;
+  display: block;
   margin-bottom: 5px;
   border-radius: 4px;
   height: 30px;
@@ -90,6 +91,7 @@ main {
 
 .inFR input:nth-child(1) {
   width: 100px;
+  display: block;
   background: var(--dtlh-color);
   color: var(--text-color);
   height: 35px;
@@ -101,6 +103,26 @@ main {
   height: 30px;
   border-radius: 0px 0px 4px 4px;
   font-weight: bold;
+  font-size: 11px;
+  color: var(--branco);
+}
+
+#nSeAplica {
+  text-transform: uppercase;
+  font-size: 11px;
+  border-radius: 10px;
+  margin-top: 5px;
+  width: 100px;
+  padding: 0.3rem;
+  display: block;
+  background: var(--dtlh-color);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: background 0.3s;  
+}
+
+#nSeAplica:hover {
+  background: var(--hover-dtlh);
 }
 
 /* RELATOS */

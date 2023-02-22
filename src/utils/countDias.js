@@ -1,3 +1,5 @@
+import { contFR } from "./countFR";
+
 export function contDias() {
 
 const segundo = 1000
