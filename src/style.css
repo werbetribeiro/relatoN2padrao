@@ -119,6 +119,7 @@ main {
   color: var(--text-color);
   cursor: pointer;
   transition: background 0.3s;  
+  border: none;
 }
 
 #nSeAplica:hover {
@@ -181,6 +182,7 @@ textarea::-webkit-scrollbar-thumb {
   margin-top: 10px;
   cursor: pointer;
   transition: background 0.3s;  
+  border: none;
 }
 
 #btnCopiar:hover {
